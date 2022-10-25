@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+body {
+    font-family: "Caveat", cursive;
+    color: #020F1F;
+    background-color: #020F1F;
+}
+[class*="__container"]{
+    max-width: 1500px;
+    margin: 0 auto;
+}
+.header__container {
+    font-size: 36px;
+    color: rgb(255, 255, 255); 
+    z-index: 1;
+    position: relative;
+}
+.planet{
+    height: 600px;
+    width: 1500px;
+    background: #020F1F url("../img/sky.jpg") 0 0 / 100% 100% no-repeat;
+    
+}
+.planet__system{
+    display: inline-block;
+    position: relative;
+}
+.planet__system:hover {
+    transform: translate3d(-200px, -500px, -500px) rotate(-80deg) scale(0.01);
+    transition: all 10s ease 0s;
+}
+.sun__image img{
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top:50px;
+    right: -200px;
+}
+.planet__system--sun:hover{
+    transform: rotate(5deg);
+}
+.mercury__image img{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 210px;
+    left:200px
+}
+.venus__image img{
+    width: 170px;
+    height: 170px;
+    position: absolute;
+    top: 200px;
+    left:360px
+}
+.earth__image img{
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: 220px;
+    left:550px
+}
+.mars__image img{
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: 220px;
+    left:700px
+}
+.jupiter__image img{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 180px;
+    left:850px
+}
+.saturn__image img{
+    width: 220px;
+    height: 200px;
+    position: absolute;
+    top: 180px;
+    left:1050px
+}
+.uranus__image img{
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: 210px;
+    left:1250px
+}
+.neptune__image img{
+    width: 110px;
+    height: 110px;
+    position: absolute;
+    top: 210px;
+    left:1370px
+}
+.block {
+   margin: 0 auto;    
+}
+.block__title{
+    padding-top: 70px;
+    text-align: center;
+    font-size: 24px;
+}
+.block__transform {
+   background-color: rgb(255, 255, 255);
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    border-radius: 30px;
+    display: inline-block;
+    transition: all 0.8s ease 0s;
+}
+.block__transform--translate:hover {
+    transform:translateY(50px);
+    background-color: rgb(165, 140, 189);
+}
+.block__transform--scale:hover {
+    transform: scale(1.5,1);
+    background-color: aquamarine;
+}
+.block__transform--rotate:hover {
+    transform: rotate(180deg);
+    background-color: pink;
+}
+.block__transform--skew:hover {
+    transform: skew(20deg,10deg);
+    background-color: rgba(224, 220, 103, 0.947);
+}
+.block__transform--matrix:hover {
+    transform: matrix(0, 1, 1, 0, 0, 0);
+    background-color: hotpink;
+}
+.block__transform--2d:hover {
+    transform: translate(20px, 20px) rotate(65deg) scale(0.8) ;
+    background-color: rgb(169, 207, 129);
+}
+.block__transform--transform-origin:hover {
+    transform-origin: bottom right;
+    transform: rotate(45deg);
+    background-color: rgba(209, 92, 92, 0.997);
+}
+.block__transform--translate3d:hover {
+    transform: translate3d(70px, 50px, 20px) ;
+    background-color: rgb(223, 150, 62);
+}
+.block__transform--scale3d:hover {
+    transform: rotate3d(2, 1.5, 3, -80deg) ;
+    background-color: rgb(167, 44, 44);
+}
+.block__transform--rotate3d:hover {
+    transform: rotate3d(2, 1.5, 2, 70deg) ;
+    background-color: plum;
+}
+.block__transform--matrix3d:hover {
+    transform: matrix3d(0.5,0,-0.8, 0, 0.6,1.2,-1,0,0.8,0,0.5,0,25, 0, 15,1);
+    background-color: mediumslateblue;
+    }
+.block__transform--backface-visibility:hover {
+    transform: rotateY(90deg);
+    backface-visibility: visible ;
+    background-color:aquamarine ;
+}
+.footer__container {
+    font-size: 24px;
+    text-align: right;
+    color: aliceblue;
+}
+.footer__container ::before {
+content: "\00A9 ";
+}
